@@ -1,0 +1,65 @@
+body{
+  margin: 0;
+  padding: 0;
+
+}
+
+header{
+  font-family: 'PT Sans Narrow', sans-serif;
+}
+
+.signin{
+  margin-right: 140px;
+  margin-top: 30px;
+}
+
+.signupexternal{
+  margin-left: 180px;
+    margin-top: 30px;
+}
+
+#first{
+  background: url(../images/fongray.jpg);
+  background-size: cover;
+}
+
+#second{
+  background: url(../images/fonwhite.jpg);
+  background-size: cover;
+}
+
+
+.info{
+  font-family: 'PT Sans Narrow', sans-serif;
+  font-size: 28px;
+}
+.link{
+  font-family: 'PT Sans Narrow', sans-serif;
+  margin-left: 30px;
+  color: #212529;
+  font-size: 28px;
+  transition: 0.2s ease;
+}
+
+.image{
+  box-shadow: 0 0 20px rgba(0, 0, 0, 1.0);
+  border: 1px solid rgba(0,0,0,0.5);
+  border-radius: 10px;
+}
+
+.link:hover{
+  color: #fff;
+}
+
+section{
+  padding: 40px 0;
+}
+
+footer{
+  font-family: 'PT Sans Narrow', sans-serif;
+}
+
+.arrow{
+  width: 100%;
+  margin-top: -105px;
+}

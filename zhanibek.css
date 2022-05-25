@@ -1,0 +1,133 @@
+.ulcl {
+  list-style: none;
+  margin: 0;
+  padding-left: 0;
+  background:#2d2d2d;
+  height: 60px;
+}
+
+.home{
+  float: left;
+  padding-left: 80px;
+  padding-right: 50px;
+}
+
+.acl {
+  text-decoration: none;
+  background:#2d2d2d;
+  color:#FFFFFF ;
+  padding:0px 50px;
+  font-size: 32px;
+  font-family: Arial Style;
+  line-height:60px;
+  display: block;
+  border-right: 1px solid #FFFFFF ;
+  transition: all 0.3s ease;
+}
+
+.acl:hover {
+  background:#ffffff;
+  color: #fff;
+}
+
+.licl {
+  float:left;
+  position:relative;
+}
+
+.licl > .ulcl {
+        position:relative;
+        display:none;
+}
+
+.licl:hover > .ulcl {
+        display:block;
+        width: 100%;
+}
+.licl:hover > .ulcl > .licl {
+        float:none;
+}
+
+.footer{
+  background-color: #2d2d2d;
+}
+
+.footertext{
+  font-family: Times New Roman Style;
+  color: #ffffff;
+  font-size: 24px;
+}
+
+#first{
+  background: url(../images/fongray.jpg);
+}
+
+
+.section{
+  position: absolute;
+}
+
+.firstphoto{
+  margin-left: 70px;
+  margin-top: 10px;
+  border: 7px solid #000000;
+  border-radius: 10px;
+  position: absolute;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 1.0);
+}
+
+.firsttext{
+  color: #000000;
+  font-family: Arial Style;
+  font-size: 24px;
+  margin-left: 360px;
+  margin-right: 40px;
+  margin-bottom: 50px;
+  margin-top: 20px;
+}
+.link{
+  color: #2d2d2d;
+  font-family: Arial Style;
+  font-size: 24px;
+  margin-left: 40px;
+  transition: .3s ease;
+}
+
+.link:hover{
+  color: #fff;
+}
+
+#second{
+  background: url(../images/fongray.jpg);
+}
+
+.yearsofgovernment{
+  width: 100%;
+  margin-top: -18px;
+}
+
+.secondtext{
+  color: #000000;
+  font-family: Arial Style;
+  font-size: 24px;
+  margin-left: 40px;
+  margin-right: 430px;
+}
+
+.secondphoto{
+  margin-left:1070px;
+  margin-top: 15px;
+  border: 7px solid #000000;
+  border-radius: 10px;
+  position: absolute;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 1.0);
+}
+
+.thirdtext{
+  color: #000000;
+  font-family: Arial Style;
+  font-size: 24px;
+  margin-left: 470px;
+  margin-right: 40px;
+  margin-top: -10px;
+}
