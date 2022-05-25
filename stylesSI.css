@@ -1,0 +1,64 @@
+body{
+	margin: 0;
+	padding: 0;
+}
+
+header{
+	font-family: 'PT Sans Narrow', sans-serif;
+}
+
+.signin{
+	margin-right: 140px;
+	margin-top: 30px;
+}
+
+.signupexternal{
+	margin-left: 180px;
+	margin-top: 30px;
+}
+
+.welcome{
+	margin: 20px 0;
+	font-weight: 700;
+	font-size: 48px;
+	font-family: 'PT Sans Narrow', sans-serif;
+}
+
+
+.container{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	margin-top: -40px;
+}
+
+.reg{
+	margin-top: 150px;
+	padding: 30px 30px;
+	background: rgba(108, 218, 255, 0.5);
+	border: 5px solid #16c4ff;
+	border-radius: 20px;
+	box-shadow: 0 0 20px rgba(255,255, 255, 0.3);
+}
+
+.text{
+	font-family: 'PT Sans Narrow', sans-serif;
+	font-size: 20px;
+	color: #fff;
+}
+
+.link{
+	color: #dcdcdc;
+	transition: .3s ease;
+}
+
+.link:hover{
+	color: #fff;
+}
+
+
+  #fon{
+	  background: url(images/fon1.jpg);
+	  height: 100vh;
+  }

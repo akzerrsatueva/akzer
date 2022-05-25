@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="styles.css">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+	<link rel="icon" href="images\logo.png">
+	<title>Kazakh khanate</title>
+</head>
+<body onload="animateText('dynamic', 'Welcome to our site!', 0)">
+	<header class="menu">
+		<div class="collapse" id="navbarToggleExternalContent">
+			<div class="bg-dark p-4">
+				<li class="nav-item px-4 fs-3">
+					<a class="nav-link active text-white" aria-current="page" href="index.html">Home</a>
+				</li>
+				<div class="btn-group px-4">
+					<a class="nav-link text-white fs-3" href="khans.html" data-toggle="dropdown" aria-expanded="false">
+					Khans
+					</a>
+					<button type="button" class="btn dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false" style="color: #fff; font-size: 32px;">
+					</button>
+					<ul class="dropdown-menu bg-dark border-white">
+						<li><a class="dropdown-item text-light fs-4" href="khans/kerei.html">Kerei khan</a></li>
+						<li><a class="dropdown-item text-light fs-4" href="khans/zhanibek.html">Zhanibek khan</a></li>
+						<li><a class="dropdown-item text-light fs-4" href="khans/kasym.html">Kasym khan</a></li>
+						<li><a class="dropdown-item text-light fs-4" href="khans/esim.html">Esim khan</a></li>
+						<li><a class="dropdown-item text-light fs-4" href="khans/tauke.html">Tauke khan</a></li>
+					</ul>
+				</div>
+				<br>
+				<div class="btn-group px-4">
+					<a class="nav-link text-white fs-3" aria-current="page" href="bis.html">Bis</a>
+				</div>
+			<form class="d-flex">
+				<a href="formSI.html" class="btn signin btn-outline-light btn-lg position-absolute end-0 translate-middle-y ms-5">Sign In</a>
+				<a href="formSU.html" class="btn signupexternal btn-outline-light btn-lg position-absolute end-0 translate-middle-y" style="margin-right: 20px;">Sign Up</a>
+			</form>
+			<br><br>
+		</div>
+	</div>
+	<nav class="navbar navbar-expand-lg navbar-light bg-dark col-xl-12 col-md-12 col-sm-12">
+		<div class="container-fluid">
+			<img class="px-4" src="images/logo.png" height="62">
+			<button class="navbar-toggler bg-dark" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse">
+				<ul class="navbar-nav">
+					<li class="nav-item px-4 fs-3">
+						<a class="nav-link active text-white" aria-current="page" href="index.html">Home</a>
+					</li>
+					<div class="btn-group px-4">
+						<a class="nav-link text-white fs-3" href="khans.html" data-toggle="dropdown" aria-expanded="false">
+							Khans
+						</a>
+						<button type="button" class="btn dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false" style="color: #fff; font-size: 32px;">
+						</button>
+						<ul class="dropdown-menu bg-dark border-white">
+							<li><a class="dropdown-item text-light fs-4" href="khans/kerei.html">Kerei khan</a></li>
+							<li><a class="dropdown-item text-light fs-4" href="khans/zhanibek.html">Zhanibek khan</a></li>
+							<li><a class="dropdown-item text-light fs-4" href="khans/kasym.html">Kasym khan</a></li>
+							<li><a class="dropdown-item text-light fs-4" href="khans/esim.html">Esim khan</a></li>
+							<li><a class="dropdown-item text-light fs-4" href="khans/tauke.html">Tauke khan</a></li>
+						</ul>
+					</div>
+					<div class="btn-group px-4">
+						<a class="nav-link text-white fs-3" href="bis.html" data-toggle="dropdown" aria-expanded="false">Bis</a>
+					</div>
+				<form class="d-flex">
+					<i class="fa-solid fa-user-pen"></i>
+					<a href="formSI.html" class="btn signin btn-outline-light btn-lg position-absolute end-0 translate-middle-y">Sign In</a>
+					<a href="formSU.html" class="btn signupexternal btn-outline-light btn-lg position-absolute end-0 translate-middle-y me-3">Sign Up</a>
+				</form>
+			</div>
+		</div>
+	</nav>
+</header>
+
+<section id="main1">
+	<div class="container">
+		<div class="row">
+			<div class="col-12">
+				<h2 class="text-center welcome text-white"><span id="dynamic"></span></h2>
+			</div>
+		</div>
+		<div class="row">
+			<center>
+				<div id="maincarousel" class="carousel slide my-5 col-xl-12 col-md-12 col-sm-12" data-bs-ride="carousel" >
+					<div class="carousel-indicators">
+						<button type="button" data-bs-target="#maincarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+						<button type="button" data-bs-target="#maincarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+						<button type="button" data-bs-target="#maincarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+					</div>
+					<div class="carousel-inner">
+						<div class="carousel-item active">
+							<img src="images/i.jpg" class="d-block w-100 sliderimg">
+							<div class="carousel-caption d-none d-md-block">
+								<h5 class="carouseltitle">Khans of Kazakh Khanate</h5>
+								<p class="carouseltext mb-5">Here you can get information about the khans of Kazakh Khanate</p>
+								<a href="khans.html" class="btn more btn-light btn-md position-absolute translate-middle-x">More</a>
+							</div>
+						</div>
+						<div class="carousel-item">
+							<img src="images/kazak67.jpg" class="d-block w-100 sliderimg">
+							<div class="carousel-caption d-none d-md-block">
+								<h5 class="carouseltitle">Bis of Kazakh Khanate</h5>
+								<p class="carouseltext mb-5">Here you can get information about the bis of Kazakh Khanate</p>
+								<a href="bis.html" class="btn more btn-light btn-md position-absolute translate-middle-x">More</a>
+							</div>
+						</div>
+						<div class="carousel-item">
+							<img src="images/historyy.jpg" class="d-block w-100 sliderimg">
+							<div class="carousel-caption d-none d-md-block">
+								<h5 class="carouseltitle">Sign Up</h5>
+								<p class="carouseltext mb-5">Here you can log in</p>
+								<a href="formSI.html" class="btn more btn-light btn-md position-absolute translate-middle-x">More</a>
+							</div>
+						</div>
+					</div>
+					<button class="carousel-control-prev" type="button" data-bs-target="#maincarousel" data-bs-slide="prev">
+						<span class="carousel-control-prev-icon" aria-hidden="true"></span>	
+					</button>
+					<button class="carousel-control-next" type="button" data-bs-target="#maincarousel" data-bs-slide="next">
+						<span class="carousel-control-next-icon" aria-hidden="true"></span>	
+					</button>
+				</div>
+			</center>
+		</div>
+	</div>
+</section>
+
+<section id="main2">
+	<div class="container">
+		<div class="row">
+			<div class="col-12">
+				<h2 class="text-center welcome text-black">Khans of Kazakh Khanate</h2><br><br>
+			</div>
+		</div>
+		<div class="row">
+
+			<div class="col-xl-4 col-md-6 col-sm-12 text-center">
+				<div class="a-box">
+					<div class="img-container">
+						<div class="img-inner">
+							<div class="inner-skew">
+								<img src="images/home1.jpg">
+							</div>
+						</div>
+					</div>
+					<div class="text-container">
+						<h3>Kerei khan<br>(1465-1473)</h3>
+						<p>One of the founders and the first khan of the Kazakh Khanate. The only son of Bolat, the son of Toktakia</p><br><br>
+
+						<div>
+						<a href="khans/kerei.html" class="btn more btn-dark btn-md position-absolute translate-middle-x">More</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-xl-4 col-md-6 col-sm-12 text-center">
+				<div class="a-box">
+					<div class="img-container">
+						<div class="img-inner">
+							<div class="inner-skew">
+								<img src="images/home2.jpg">
+							</div>
+						</div>
+					</div>
+					<div class="text-container">
+						<h3>Zhanibek khan<br>(1473-1480)</h3>
+						<p>Founder of the Kazakh Khanate and the dynasty of Kazakh Khans, son of Barak Khan, great-grandson of Uly Khan.</p><br><br>
+
+						<div>
+						<a href="khans/zhanibek.html" class="btn more btn-dark btn-md position-absolute translate-middle-x">More</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-xl-4 col-md-6 col-sm-12 text-center">
+				<div class="a-box">
+					<div class="img-container">
+						<div class="img-inner">
+							<div class="inner-skew">
+								<img src="images/home33.jpg">
+							</div>
+						</div>
+					</div>
+					<div class="text-container">
+						<h3>Kasym khan<br>(1511-1521)</h3>
+						<p>In history, the name of Kasym Khan is directly related to the strengthening and strengthening of the Kazakh Khanate.</p><br><br>
+
+						<div>
+						<a href="khans/kasym.html" class="btn more btn-dark btn-md position-absolute translate-middle-x">More</a>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+
+		<div class="row">
+			<div class="col-xl-6 col-md-6 col-sm-12 text-center">
+				<div class="a-box">
+					<div class="img-container">
+						<div class="img-inner">
+							<div class="inner-skew">
+								<img src="images/home44.jpg">
+							</div>
+						</div>
+					</div>
+					<div class="text-container">
+						<h3>Esim khan<br>(1598-1628)</h3>
+						<p>Esim Khan is the son of Shygai Khan, who previously lived in the Khan's horde of the Kazakh Khanate in Turkestan.</p><br><br>
+
+						<div>
+						<a href="khans/esim.html" class="btn more btn-dark btn-md position-absolute translate-middle-x">More</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-xl-6 col-md-6 col-sm-12 text-center">
+				<div class="a-box">
+					<div class="img-container">
+						<div class="img-inner">
+							<div class="inner-skew">
+								<img src="images/home55.jpg">
+							</div>
+						</div>
+					</div>
+					<div class="text-container">
+						<h3>Tauke khan<br>(1672-1715)</h3>
+						<p>Khan of the younger zhuz since 1652, and since 1672-ruler of the Kazakh Khanate, son of Khan Salkam Zhangir.</p><br><br>
+
+						<div>
+						<a href="khans/tauke.html" class="btn more btn-dark btn-md position-absolute translate-middle-x">More</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<br><br><br>
+</section>
+
+<section id="main3">
+	<div class="container">
+		<div class="row">
+			<div class="col-12">
+				<h2 class="text-center welcome text-white">Bis of Kazakh Khanate</span></h2>
+			</div>
+		</div>
+		<br><br>
+		<div class="row">
+			<div class="col-xl-4 col-md-6 col-sm-12 text-center">
+				<div class="card" id="card1">
+                         <img src="images/home3.jpg" width="300px" style="border: 1px solid rgba(0, 0, 0, 0.7); border-radius: 10px" id="image1">
+                         <h2>Tole bi</h2>
+                         <p id="txt1">Tole comes from the kazakh tribe Dulat, ubtribe Zhanys. He was the head biy of the Kazakh senior juz, as well as an author, orator, poet, politician and a public figure. He was born in Jaysan in what is now Shuy district, Jambyl oblast in 1663.</p>
+                    </div>
+			</div>
+			<div class="col-xl-4 col-md-6 col-sm-12 text-center">
+				<div class="card" id="card2">
+                         <img src="images/home4.jpg" width="300px" style="border: 1px solid rgba(0, 0, 0, 0.7); border-radius: 10px" id="image2">
+                         <h2>Kazybek bi</h2>
+                         <p id="txt2">He was the head biy of the Kazakh middle juz,The boy received the name of Kazybek.At that time the family could not assume that this restless boy would become a famous orator and great diplomat and his advices would be heard by khans and sultans. </p>
+                    </div>
+			</div>
+			<div class="col-xl-4 col-md-6 col-sm-12 text-center">
+				<div class="card" id="card3">
+                         <img src="images/home5.jpg" width="300px" style="border: 1px solid rgba(0, 0, 0, 0.7); border-radius: 10px" id="image3">
+                         <h2>Aiteke bi</h2>
+                         <p id="txt3">Aiteke Bi was the statesman, one of the three biys made a great contribution fate of the Kazakh people. Baibekuly Aiteke bi (1644-1700) is a statesman and public figure, who participated in the government of the Kazakh khans Tauke, Bolat, Sameke, Abilmambet and Abylai.</p>
+                    </div>
+			</div>
+		</div>
+	</div>
+	<br><br><br>
+	<footer class="py-3 bg-dark">
+		<ul class="nav justify-content-center  pb-2 mb-2">
+			<li class="nav-item"><a href="index.html" class="nav-link px-4 text-light fs-5">Home</a></li>
+			<li class="nav-item"><a href="khans.html" class="nav-link px-4 text-light fs-5">Khans</a></li>
+			<li class="nav-item"><a href="bis.html" class="nav-link px-4 text-light fs-5">Bis</a></li>
+		</ul>
+		<center>
+			<hr width="640" style="color:#fff">
+		</center>
+		<p class="text-center text-light fs-5 textfooter">Copyright &copy Akzer, Karkigash, Balnur, Azhibek<br>
+			2022
+		</p>
+	</footer>
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script src="index.js"></script>
+	<script src="gotoup.js"></script>
+</body>
+</html>
